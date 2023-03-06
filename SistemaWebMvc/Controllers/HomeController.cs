@@ -18,6 +18,16 @@ namespace SistemaWebMvc.Controllers
             _logger = logger;
         }
 
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Sistema Web MVC 5.0 App from C# curso.";
+            ViewData["Aluno"] = "Claudio de Oliveira Pereira Junior";
+            ViewData["email"] = "claudio.oliveira127@outlook.com";
+
+            return View();
+        }
+
+
         public IActionResult Index()
         {
             return View();

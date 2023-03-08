@@ -21,7 +21,7 @@ namespace SistemaWebMvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Sistema Web MVC 5.0 App from C# curso.";
+            ViewData["Message"] = "Sistema Web MVC App from C# curso.";
             ViewData["Aluno"] = "Claudio de Oliveira Pereira Junior";
             ViewData["email"] = "claudio.oliveira127@outlook.com";
             ViewData["contato"] = "(21)983949540";

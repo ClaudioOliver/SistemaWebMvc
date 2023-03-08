@@ -28,7 +28,8 @@ namespace SistemaWebMvc
             services.AddControllersWithViews();            
 
             services.AddDbContext<SistemaWebMvcContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("SistemaWebMvcContext")));
+                    options.UseNpgsql(Configuration.GetConnectionString("SistemaWebMvcContext"), builder =>
+            builder.MigrationsAssembly("SistemaWebMvc")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
